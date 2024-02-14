@@ -93,7 +93,113 @@
         }
         private static void EntertainmentQuiz()
         {
-            throw new NotImplementedException();
+            try
+            {
+                int resposta;
+                int count = 0;
+
+                Console.Clear();
+                Console.WriteLine("First question:");
+                Console.WriteLine("What is the highest-grossing movie in history?");
+                Console.WriteLine("1 - Titanic");
+                Console.WriteLine("2 - Avatar");
+                Console.WriteLine("3 - Avatar2");
+                Console.WriteLine("4 - Barbie");
+
+                resposta = Convert.ToInt32(Console.ReadLine());
+
+                if(resposta == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 2)
+                {
+                    Console.WriteLine("The answer is correct!!!");
+                    count++;
+                }
+                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+
+                Console.WriteLine("Second question:");
+                Console.WriteLine("What is the best-selling game of all time?");
+                Console.WriteLine("1 - Minecraft");
+                Console.WriteLine("2 - GTAV");
+                Console.WriteLine("3 - Tetris");
+                Console.WriteLine("4 - Wii Sports");
+
+                resposta = Convert.ToInt32(Console.ReadLine());
+
+                if (resposta == 1)
+                {
+                    Console.WriteLine("The answer is correct!!!");
+                    count++;
+                }
+                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+
+                Console.WriteLine("Third question:");
+                Console.WriteLine("What fruit is SpongeBob's house?");
+                Console.WriteLine("1 - Banana");
+                Console.WriteLine("2 - Peach");
+                Console.WriteLine("3 - Apple");
+                Console.WriteLine("4 - Pineapple");
+
+                resposta = Convert.ToInt32(Console.ReadLine());
+
+                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 4)
+                {
+                    Console.WriteLine("The answer is correct!!!");
+                    count++;
+                }
+
+                Console.WriteLine("Fourth question:");
+                Console.WriteLine("What is the name of Simba'2 father from Lion King?");
+                Console.WriteLine("1 - Scar");
+                Console.WriteLine("2 - Alex");
+                Console.WriteLine("3 - Mufasa");
+                Console.WriteLine("4 - Maxim");
+
+                resposta = Convert.ToInt32(Console.ReadLine());
+
+                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 3) 
+                {
+                    Console.WriteLine("The answer is correct!!!");
+                    count++;
+                }
+                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+
+                Console.WriteLine("Fifth question:");
+                Console.WriteLine("What is the name of the villain in Harry Potter?");
+                Console.WriteLine("1 - Spong Bob");
+                Console.WriteLine("2 - Simba");
+                Console.WriteLine("3 - Darth Vader");
+                Console.WriteLine("4 - Voldemort");
+
+                resposta = Convert.ToInt32(Console.ReadLine());
+
+                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (resposta == 4)
+                {
+                    Console.WriteLine("The answer is correct!!!");
+                    count++;
+                }
+
+                if (count == 0) Console.WriteLine("You haven't made any correct guesses");
+                else Console.WriteLine($"You have made {count} correct guesses");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                MsgNextScreen("PRESS A KEY TO GO TO THE Main MENU");
+            }
         }
         private static void SportsQuiz()
         {
