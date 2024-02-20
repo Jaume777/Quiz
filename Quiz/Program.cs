@@ -164,7 +164,84 @@
         }
         private static void FoodQuiz()
         {
-            throw new NotImplementedException();
+            int answer;
+
+            Console.WriteLine("Question 1 - In which country were French Fries originated? \n 1 - Belgium \n 2 - USA \n 3 - France \n 4 - Spain");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 1)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 2 - Choose the only Spanish dish from the following answers: \n 1 - Hamburguer \n 2 - Paella \n 3 - Fish and Chips \n 4 - Ramen");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 2)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 3 - A famous Spanish chef is ... \n 1 - Ana Roš \n 2 - Björn Frantzen \n 3 - Alex Atala \n 4 - Karlos Arguiñano");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 4)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 4 - Which one of these is considered to have the best food? \n 1 - Italy \n 2 - Japan \n 3 - Spain \n 4 - Greece");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 1)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 5 - Who is the most famous chef on the whole world? \n 1 - Gordon Ramsay \n 2 - Alberto Chicote \n 3 - Alain Ducasse \n 4 - Daviz Muñoz");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 4)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            MsgNextScreen("Press a key to go to the main menu");
         }
         private static void AstrologyQuiz()
         {
