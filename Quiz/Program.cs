@@ -79,9 +79,88 @@
             Console.WriteLine(msg);
             Console.ReadKey();
         }
+
+        // Beginning of Miquel's Code.
         private static void HistoryQuiz()
         {
-            throw new NotImplementedException();
+            int answer;
+
+            Console.WriteLine("Question 1 - Which year did the World War 2 end? \n 1 - 1939 \n 2 - 1955 \n 3 - 1945 \n 4 - 1950");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if  (answer == 3)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 2 - Which one of these is the U.S. National day? \n 1 - 21st of December \n 2 - 4th of July \n 3 - 6th of September \n 4 - 1st of January");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 2)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 3 - Who invented the light bulb? \n 1 - Thomas Edison \n 2 - Albert Einstein \n 3 - Nikola Tesla \n 4 - Benjamin Franklin");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 1)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 4 - In which country was the first atomic bomb used? \n 1 - Spain \n 2 - Japan \n 3 - China \n 4 - North Korea");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 2)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 5 - According to the legend who founded Rome? \n 1 - Cleopatra \n 2 - Julius Caesar \n 3 - Cristiano Ronaldo \n 4 - Romulus and Remus");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 4)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            MsgNextScreen("Press a key to go to the main menu");
         }
         private static void FoodQuiz()
         {
@@ -91,6 +170,8 @@
         {
             throw new NotImplementedException();
         }
+
+        //End of Miquel's Code
         private static void EntertainmentQuiz()
         {
             throw new NotImplementedException();
