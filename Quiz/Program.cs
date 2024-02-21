@@ -23,7 +23,7 @@
                         break;
                     case ConsoleKey.D3:
                     case ConsoleKey.NumPad3:
-                        AstrologyQuiz();
+                        AstronomyQuiz();
                         break;
                     case ConsoleKey.D4:
                     case ConsoleKey.NumPad4:
@@ -65,7 +65,7 @@
             Console.Clear();
             Console.WriteLine("1 - History");
             Console.WriteLine("2 - Food");
-            Console.WriteLine("3 - Astrology");
+            Console.WriteLine("3 - Astronomy");
             Console.WriteLine("4 - Entertainment");
             Console.WriteLine("5 - Sports");
             Console.WriteLine("6 - IT");
@@ -226,7 +226,7 @@
 
             Console.Clear();
 
-            Console.WriteLine("Question 5 - Who is the most famous chef on the whole world? \n 1 - Gordon Ramsay \n 2 - Alberto Chicote \n 3 - Alain Ducasse \n 4 - Daviz Muñoz");
+            Console.WriteLine("Question 5 - Who is considered to be the best chef on the whole world? \n 1 - Gordon Ramsay \n 2 - Alberto Chicote \n 3 - Alain Ducasse \n 4 - Daviz Muñoz");
             answer = Convert.ToInt32(Console.ReadLine());
             if (answer == 4)
             {
@@ -243,9 +243,87 @@
 
             MsgNextScreen("Press a key to go to the main menu");
         }
-        private static void AstrologyQuiz()
+        private static void AstronomyQuiz()
         {
-            throw new NotImplementedException();
+            int answer;
+
+            Console.WriteLine("Question 1 - What is the name of the gallaxy we live in? \n 1 - Black Eye \n 2 - Cigar \n 3 - Milky Way \n 4 - Andromeda");
+            answer = Convert.ToInt32(Console.ReadLine());
+
+            if (answer == 3)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 2 - How many planets form the solar system? \n 1 - 5 \n 2 - 8 \n 3 - 9 \n 4 - 12");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 2)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 3 - Which one is closest to he sun? \n 1 - Mercury \n 2 - Mars \n 3 - Pluto \n 4 - Earth");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 1)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 4 - What's an asteroid? \n 1 - Dark matter mass \n 2 - A planet \n 3 - A type of star \n 4 - A rocky object");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 4)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Question 5 - What's a supernova? \n 1 - A type of weather \n 2 - A star explosion \n 3 - A planet \n 4 - A planet explosion");
+            answer = Convert.ToInt32(Console.ReadLine());
+            if (answer == 2)
+            {
+                Console.WriteLine("Correct!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong Answer");
+            }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
+
+            Console.Clear();
+
+            MsgNextScreen("Press a key to go to the main menu");
         }
 
         //End of Miquel's Code
