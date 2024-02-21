@@ -356,7 +356,7 @@
                 else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Third question:");
-                Console.WriteLine("Which football team won the Spanish La Liga in the 2022-2023 season?");
+                Console.WriteLine("What is the most used programming language in the world?");
                 Console.WriteLine("1 - Python");
                 Console.WriteLine("2 - JavaScript");
                 Console.WriteLine("3 - C++");
