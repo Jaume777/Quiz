@@ -108,15 +108,15 @@
             
             try
             {
-                string answer;
-                int correctCount = 0;
+                string answer; //The answers (changes each answer)
+                int correctCount = 0; //answers that are correct
 
-                Console.Clear();
+                Console.Clear(); //Clears the console
                 Console.WriteLine("Let's learn some Maths!! :D");
-                Thread.Sleep(1000);
+                Thread.Sleep(1000); //delays the next message for 1000 milliseconds
                 Console.WriteLine();
                 Console.WriteLine("Press 'Y' key to continue...");
-                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                while (Console.ReadKey().Key != ConsoleKey.Y) ; //Keeps looping until the Y key is pressed
                 Console.Clear();
 
                 //Question 1
@@ -135,7 +135,7 @@
                 if ((answer == "c") || (answer == "7"))
                 {
                     Console.WriteLine("Well done!! Your answer is correct :)");
-                    correctCount++;
+                    correctCount++; //Correct count goes up by 1
                 }
                 else Console.WriteLine("Your answer is incorrect");
 
@@ -266,6 +266,10 @@
                     Console.WriteLine("Better luck next time!");
                     Thread.Sleep(1000);
                 }
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
             }
             catch (Exception e)
             {
