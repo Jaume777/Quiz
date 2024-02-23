@@ -4,14 +4,14 @@
     {
         static void Main(string[] args)
         {
-            ConsoleKeyInfo tecla;
+            ConsoleKeyInfo keyboard;
             do
             {
                 Console.Clear();
                 ShowOptions();
-                tecla = Console.ReadKey();
+                keyboard = Console.ReadKey();
                 Console.Clear();
-                switch (tecla.Key)
+                switch (keyboard.Key)
                 {
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
@@ -54,10 +54,10 @@
                         MsgNextScreen("PRESS ANY KEY 2 EXIT");
                         break;
                     default:
-                        MsgNextScreen("Error. Prem una tecla per tornar al menú...");
+                        MsgNextScreen("Error. Press any key to return to the main menu...");
                         break;
                 }
-            } while (tecla.Key != ConsoleKey.D0 && tecla.Key != ConsoleKey.NumPad0);
+            } while (keyboard.Key != ConsoleKey.D0 && keyboard.Key != ConsoleKey.NumPad0);
         }
 
         public static void ShowOptions()
@@ -657,17 +657,572 @@
                 MsgNextScreen("PRESS A KEY TO GO TO THE Main MENU");
             }
         }
+        /// <summary>
+        /// This function implements the Maths Quiz questions for which the user needs to complete to return to the main menu.
+        /// </summary>
         private static void MathQuiz()
-        {
-            throw new NotImplementedException();
+        {          
+            try //Code of the maths quiz is executed in this block
+            {
+                string answer; //Variable for storing the answers (changes each answer).
+                int correctCount = 0; //answers that are correct.
+
+                Console.Clear(); //Clears the console
+                Console.WriteLine("Let's learn some Maths!! :D");
+                Thread.Sleep(1000); //delays the next message for 1000 milliseconds.
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ; //Keeps looping until the Y key is pressed.
+                Console.Clear();
+
+                //Question 1
+                Console.WriteLine("Question 1:");
+                Console.WriteLine("-----------");
+                Console.WriteLine();
+                Thread.Sleep(1000);
+                Console.WriteLine("What is the square root of 49?");
+                Console.WriteLine("a) \t 4"); // \t tabs the text for separation.
+                Console.WriteLine("b) \t 9");
+                Console.WriteLine("c) \t 7");
+                Console.WriteLine("d) \t 12");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "c") || (answer == "7")) //User can choose to input a, b, c, d or the answer itself.
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++; //Correct count goes up by 1
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 2
+                Console.WriteLine("Question 2:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("What is 12 squared?");
+                Console.WriteLine("a) \t 100");
+                Console.WriteLine("b) \t 1200");
+                Console.WriteLine("c) \t 512");
+                Console.WriteLine("d) \t 144");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "d") || (answer == "144"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 3
+                Console.WriteLine("Question 3:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("What is 500 divided by 4?");
+                Console.WriteLine("a) \t 150");
+                Console.WriteLine("b) \t 120");
+                Console.WriteLine("c) \t 140");
+                Console.WriteLine("d) \t 125");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "d") || (answer == "125"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 4
+                Console.WriteLine("Question 4:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("What is 64 x 12?");
+                Console.WriteLine("a) \t 1044");
+                Console.WriteLine("b) \t 515");
+                Console.WriteLine("c) \t 672");
+                Console.WriteLine("d) \t 763");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "c") || (answer == "672"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 5
+                Console.WriteLine("Question 5:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("If a rectangle has a length of 7 meters and a width of 3 meters, what is its area?");
+                Console.WriteLine("a) \t 21");
+                Console.WriteLine("b) \t 30");
+                Console.WriteLine("c) \t 51");
+                Console.WriteLine("d) \t 10");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "a") || (answer == "21"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Result
+                Console.Write("Your final result is");
+                for (int i = 0; i < 4 ; i++) //This loop outputs the full stops 4 times (....) and with a delay after each one for a loading effect.
+                {
+                    Console.CursorVisible = false; //Makes cursor disappear to see the full stops more clearly.
+                    Thread.Sleep(800);
+                    Console.Write(".");
+                }                
+                if (correctCount >= 3)
+                {
+                    Thread.Sleep(800);
+                    Console.WriteLine($" {correctCount} out of 5.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("Well done!!");
+                    Thread.Sleep(1000);
+                }
+                else
+                {
+                    Thread.Sleep(800);
+                    Console.WriteLine($" {correctCount} out of 5 :(");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("Better luck next time!");
+                    Thread.Sleep(1000);
+                }
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                Console.CursorVisible = true; //Reveals the cursor.
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+            }
+            catch (Exception e) //If an exception occurs during execution of the try block, details of the exception are displayed to the user
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally //This block is executed regardless of if whether an exception has occured, it then prompts the user to press a key to return to the main menu.
+            {
+                MsgNextScreen("Press any key to return to the main menu...");
+            }
         }
+        /// <summary>
+        /// This function implements the Geography Quiz questions for which the user needs to complete to return to the main menu.
+        /// </summary>
         private static void GeoraphyQuiz()
         {
-            throw new NotImplementedException();
+            try //Code of the Geography quiz is executed in this block
+            {
+                string answer; //Variable for storing the answers (changes each answer).
+                int correctCount = 0; //answers that are correct.
+
+                Console.Clear(); //Clears the console.
+                Console.WriteLine("Let's learn a bit about the world!! :D");
+                Thread.Sleep(1000); //delays the next message for 1000 milliseconds.
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ; //Keeps looping until the Y key is pressed.
+                Console.Clear();
+
+                //Question 1
+                Console.WriteLine("Question 1:");
+                Console.WriteLine("-----------");
+                Console.WriteLine();
+                Thread.Sleep(1000);
+                Console.WriteLine("What is the capital city of New Zealand?");
+                Console.WriteLine("a) \t Aeotearoa"); // \t tabs the text for separation.
+                Console.WriteLine("b) \t Auckland");
+                Console.WriteLine("c) \t Christchurch");
+                Console.WriteLine("d) \t Wellington");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "d") || (answer == "Wellington")) //User can choose to input a, b, c, d or the answer itself.
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++; //Correct count goes up by 1
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 2
+                Console.WriteLine("Question 2:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("How many states are there in America?");
+                Console.WriteLine("a) \t 50");
+                Console.WriteLine("b) \t 49");
+                Console.WriteLine("c) \t 48");
+                Console.WriteLine("d) \t 47");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "a") || (answer == "50"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 3
+                Console.WriteLine("Question 3:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Which countries make up the United Kingdom?");
+                Console.WriteLine("a) \t England, Scotland and Wales");
+                Console.WriteLine("b) \t England, Scotland, Wales and Ireland");
+                Console.WriteLine("c) \t England, Scotland, Wales and Northern Ireland");
+                Console.WriteLine("d) \t England, Scotland, Wales and Southern Ireland");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "c") || (answer == "England Scotland, Wales and Northern Ireland"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 4
+                Console.WriteLine("Question 4:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Which country is the city Oslo located in?");
+                Console.WriteLine("a) \t Sweden");
+                Console.WriteLine("b) \t Denmark");
+                Console.WriteLine("c) \t Norway");
+                Console.WriteLine("d) \t Finland");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "c") || (answer == "Norway"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 5
+                Console.WriteLine("Question 5:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("How many continents are there in the world?");
+                Console.WriteLine("a) \t 5");
+                Console.WriteLine("b) \t 7");
+                Console.WriteLine("c) \t 8");
+                Console.WriteLine("d) \t 4");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "b") || (answer == "7"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Result
+                Console.Write("Your final result is");
+                for (int i = 0; i < 4; i++) //This loop outputs the full stops 4 times (....) and with a delay after each one for a loading effect.
+                {
+                    Console.CursorVisible = false; //Makes cursor disappear to see the full stops more clearly.
+                    Thread.Sleep(800);
+                    Console.Write(".");
+                }
+                if (correctCount >= 3)
+                {
+                    Thread.Sleep(800);
+                    Console.WriteLine($" {correctCount} out of 5.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("Well done!!");
+                    Thread.Sleep(1000);
+                }
+                else
+                {
+                    Thread.Sleep(800);
+                    Console.WriteLine($" {correctCount} out of 5 :(");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("Better luck next time!");
+                    Thread.Sleep(1000);
+                }
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                Console.CursorVisible = true; //Reveals the cursor.
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+            }
+            catch (Exception e) //If an exception occurs during execution of the try block, details of the exception are displayed to the user
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally //This block is executed regardless of if whether an exception has occured, it then prompts the user to press a key to return to the main menu.
+            {
+                MsgNextScreen("Press any key to return to the main menu...");
+            }
         }
+        /// <summary>
+        /// This function implements the Music Quiz questions for which the user needs to complete to return to the main menu.
+        /// </summary>
         private static void MusicQuiz()
         {
-            throw new NotImplementedException();
+            try //Code of the music quiz is executed in this block
+            {
+                string answer; //Variable for storing the answers (changes each answer).
+                int correctCount = 0; //answers that are correct.
+
+                Console.Clear(); //Clears the console.
+                Console.WriteLine("Let's test your music knowledge!! :D");
+                Thread.Sleep(1000); //delays the next message for 1000 milliseconds.
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ; //Keeps looping until the Y key is pressed.
+                Console.Clear();
+
+                //Question 1
+                Console.WriteLine("Question 1:");
+                Console.WriteLine("-----------");
+                Console.WriteLine();
+                Thread.Sleep(1000);
+                Console.WriteLine("Who is the top selling solo artist of all time?");
+                Console.WriteLine("a) \t Taylor Swift"); // \t tabs the text for separation.
+                Console.WriteLine("b) \t Elvis Presley");
+                Console.WriteLine("c) \t Madonna");
+                Console.WriteLine("d) \t Michael Jackson");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "d") || (answer == "Michael Jackson")) //User can choose to input a, b, c, d or the answer itself.
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++; //Correct count goes up by 1
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 2
+                Console.WriteLine("Question 2:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Which year did Queen debut their first studio album?");
+                Console.WriteLine("a) \t 1975");
+                Console.WriteLine("b) \t 1974");
+                Console.WriteLine("c) \t 1973");
+                Console.WriteLine("d) \t 1972");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "c") || (answer == "1973"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 3
+                Console.WriteLine("Question 3:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("What was the name of Tom Petty's band?");
+                Console.WriteLine("a) \t Tom Petty and the Jawbreakers");
+                Console.WriteLine("b) \t Tom Petty and the Heartbreakers");
+                Console.WriteLine("c) \t Tom Petty and the Rockbreakers");
+                Console.WriteLine("d) \t Tom Petty and the Soulbreakers");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "b") || (answer == "Tom Petty and the Heartbreakers"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 4
+                Console.WriteLine("Question 4:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Which of these bands is from Australia?");
+                Console.WriteLine("a) \t U2");
+                Console.WriteLine("b) \t The Police");
+                Console.WriteLine("c) \t AC/DC");
+                Console.WriteLine("d) \t Pink Floyd");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "c") || (answer == "AC/DC"))
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Question 5
+                Console.WriteLine("Question 5:");
+                Console.WriteLine("-----------");
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("What is the most streamed song on Spotify?");
+                Console.WriteLine("a) \t Blinding Lights - The Weeknd");
+                Console.WriteLine("b) \t Africa - TOTO");
+                Console.WriteLine("c) \t Shape of you - Ed Sheeran");
+                Console.WriteLine("d) \t Billie Jean - Michael Jackson");
+
+                answer = Console.ReadLine();
+
+                if ((answer == "a") || (answer == "Blinding Lights - The Weeknd") || (answer == "Blinding Lights") || (answer == "The Weeknd")) //Extra strings incase the user inputs just the artist or the song.
+                {
+                    Console.WriteLine("Well done!! Your answer is correct :)");
+                    correctCount++;
+                }
+                else Console.WriteLine("Your answer is incorrect");
+
+                Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+
+                //Result
+                Console.Write("Your final result is");
+                for (int i = 0; i < 4; i++) //This loop outputs the full stops 4 times (....) and with a delay after each one for a loading effect.
+                {
+                    Console.CursorVisible = false; //Makes cursor disappear to see the full stops more clearly.
+                    Thread.Sleep(800);
+                    Console.Write(".");
+                }
+                if (correctCount >= 3)
+                {
+                    Thread.Sleep(800);
+                    Console.WriteLine($" {correctCount} out of 5.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("Well done!!");
+                    Thread.Sleep(1000);
+                }
+                else
+                {
+                    Thread.Sleep(800);
+                    Console.WriteLine($" {correctCount} out of 5 :(");
+                    Thread.Sleep(1000);
+                    Console.WriteLine();
+                    Console.WriteLine("Better luck next time!");
+                    Thread.Sleep(1000);
+                }
+                Console.WriteLine();
+                Console.WriteLine("Press 'Y' key to continue...");
+                Console.CursorVisible = true; //Reveals the cursor.
+                while (Console.ReadKey().Key != ConsoleKey.Y) ;
+                Console.Clear();
+            }
+            catch (Exception e) //If an exception occurs during execution of the try block, details of the exception are displayed to the user
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally //This block is executed regardless of if whether an exception has occured, it then prompts the user to press a key to return to the main menu.
+            {
+                MsgNextScreen("Press any key to return to the main menu...");
+            }
         }
     }
 }
