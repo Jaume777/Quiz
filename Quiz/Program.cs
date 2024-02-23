@@ -331,7 +331,7 @@
         {
             try
             {
-                int resposta;
+                int anwser;
                 int count = 0;
 
                 Console.Clear();
@@ -342,16 +342,16 @@
                 Console.WriteLine("3 - Avatar2");
                 Console.WriteLine("4 - Barbie");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if(resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2)
+                if(anwser == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Second question:");
                 Console.WriteLine("What is the best-selling game of all time?");
@@ -360,16 +360,16 @@
                 Console.WriteLine("3 - Tetris");
                 Console.WriteLine("4 - Wii Sports");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1)
+                if (anwser == 1)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Third question:");
                 Console.WriteLine("What fruit is SpongeBob's house?");
@@ -378,12 +378,12 @@
                 Console.WriteLine("3 - Apple");
                 Console.WriteLine("4 - Pineapple");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4)
+                if (anwser == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
@@ -396,16 +396,16 @@
                 Console.WriteLine("3 - Mufasa");
                 Console.WriteLine("4 - Maxim");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) 
+                if (anwser == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) 
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Fifth question:");
                 Console.WriteLine("What is the name of the villain in Harry Potter?");
@@ -414,12 +414,12 @@
                 Console.WriteLine("3 - Darth Vader");
                 Console.WriteLine("4 - Voldemort");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4)
+                if (anwser == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
@@ -441,7 +441,7 @@
         {
             try
             {
-                int resposta;
+                int answer;
                 int count = 0;
 
                 Console.Clear();
@@ -452,16 +452,16 @@
                 Console.WriteLine("3 - UK");
                 Console.WriteLine("4 - Germany");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                answer = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1)
+                if (answer == 1)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Second question:");
                 Console.WriteLine("Which country won the last Basketball World Cup?");
@@ -470,16 +470,16 @@
                 Console.WriteLine("3 - Italy");
                 Console.WriteLine("4 - USA");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                answer = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1)
+                if (answer == 1)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Third question:");
                 Console.WriteLine("Which football team won the Spanish La Liga in the 2022-2023 season?");
@@ -488,16 +488,16 @@
                 Console.WriteLine("3 - Atletico de Madrid");
                 Console.WriteLine("4 - Real Sociedad");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                answer = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1)
+                if (answer == 1)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Fourth question:");
                 Console.WriteLine("Who is the tennis player with the most Roland Garros victories?");
@@ -506,16 +506,16 @@
                 Console.WriteLine("3 - Rafael Nadal");
                 Console.WriteLine("4 - Daniïl Medvédev");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                answer = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3)
+                if (answer == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 3)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Fifth question:");
                 Console.WriteLine("Which country has won the most Olympic medals?");
@@ -524,12 +524,12 @@
                 Console.WriteLine("3 - Xina");
                 Console.WriteLine("4 - USA");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                answer = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4)
+                if (answer == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (answer == 4)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
@@ -551,7 +551,7 @@
         {
             try
             {
-                int resposta;
+                int anwser;
                 int count = 0;
 
                 Console.Clear();
@@ -562,16 +562,16 @@
                 Console.WriteLine("3 - Home Tool Management Logic");
                 Console.WriteLine("4 - Human Task Master Locator");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1)
+                if (anwser == 1)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Second question:");
                 Console.WriteLine("Which protocol is used for sending email?");
@@ -580,16 +580,16 @@
                 Console.WriteLine("3 - FTP");
                 Console.WriteLine("4 - TCP");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1)
+                if (anwser == 1)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Third question:");
                 Console.WriteLine("What is the most used programming language in the world?");
@@ -598,16 +598,16 @@
                 Console.WriteLine("3 - C++");
                 Console.WriteLine("4 - C#");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2) 
+                if (anwser == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) 
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Fourth question:");
                 Console.WriteLine("What is a firewall in the context of computer security?");
@@ -616,16 +616,16 @@
                 Console.WriteLine("3 - An online storage system");
                 Console.WriteLine("4 - A type of touchscreen");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 2)
+                if (anwser == 1) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 Console.WriteLine("Fifth question:");
                 Console.WriteLine("Which operating system is developed by Apple Inc.?");
@@ -634,16 +634,16 @@
                 Console.WriteLine("3 - Linux");
                 Console.WriteLine("4 - Android");
 
-                resposta = Convert.ToInt32(Console.ReadLine());
+                anwser = Convert.ToInt32(Console.ReadLine());
 
-                if (resposta == 1)
+                if (anwser == 1)
                 {
                     Console.WriteLine("The answer is correct!!!");
                     count++;
                 }
-                else if (resposta == 2) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 3) Console.WriteLine("The answer is not correct!!!");
-                else if (resposta == 4) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
+                else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
 
                 if (count == 0) Console.WriteLine("You haven't made any correct guesses");
                 else Console.WriteLine($"You have made {count} correct guesses");
