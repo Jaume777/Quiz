@@ -4,14 +4,14 @@
     {
         static void Main(string[] args)
         {
-            ConsoleKeyInfo tecla;
+            ConsoleKeyInfo keyboard;
             do
             {
                 Console.Clear();
                 ShowOptions();
-                tecla = Console.ReadKey();
+                keyboard = Console.ReadKey();
                 Console.Clear();
-                switch (tecla.Key)
+                switch (keyboard.Key)
                 {
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
@@ -54,10 +54,10 @@
                         MsgNextScreen("PRESS ANY KEY 2 EXIT");
                         break;
                     default:
-                        MsgNextScreen("Error. Prem una tecla per tornar al menú...");
+                        MsgNextScreen("Error. Press any key to return to the main menu...");
                         break;
                 }
-            } while (tecla.Key != ConsoleKey.D0 && tecla.Key != ConsoleKey.NumPad0);
+            } while (keyboard.Key != ConsoleKey.D0 && keyboard.Key != ConsoleKey.NumPad0);
         }
 
         public static void ShowOptions()
