@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            // Here we create the menu to show the different topics to choose.
+            // And we also declare all the possible options.
             ConsoleKeyInfo tecla;
             do
             {
@@ -60,6 +62,7 @@
             } while (tecla.Key != ConsoleKey.D0 && tecla.Key != ConsoleKey.NumPad0);
         }
 
+        // This function is called at the begining to actually show all the topics.
         public static void ShowOptions()
         {
             Console.Clear();
@@ -83,23 +86,33 @@
         // Beginning of Miquel's Code.
         private static void HistoryQuiz()
         {
+            // This variable will be used to check the user's answers.
             int answer;
 
+            // We ask the question and then save the answwer as a number.
             Console.WriteLine("Question 1 - Which year did the World War 2 end? \n 1 - 1939 \n 2 - 1955 \n 3 - 1945 \n 4 - 1950");
             answer = Convert.ToInt32(Console.ReadLine());
+            
+            // If the answer is correct we will show a message on the screen about it.
             if  (answer == 3)
             {
                 Console.WriteLine("Correct!");
             }
+
+            // And also if it's incorrect we will say it.
             else
             {
                 Console.WriteLine("Wrong Answer");
             }
+
+            // Then the user must press enter so the next question appears. 
             Console.WriteLine("Press enter to continue");
             Console.ReadLine();
 
+            // Before the next question appears we will clear the screen so it's more organised.
             Console.Clear();
 
+            // And for every topic's question is the same.
             Console.WriteLine("Question 2 - Which one of these is the U.S. National day? \n 1 - 21st of December \n 2 - 4th of July \n 3 - 6th of September \n 4 - 1st of January");
             answer = Convert.ToInt32(Console.ReadLine());
             if (answer == 2)
@@ -160,6 +173,7 @@
 
             Console.Clear();
 
+            // Once every topic's question is finished it will require the user to press a key to go to the main menu and select another topic or exit the program.
             MsgNextScreen("Press a key to go to the main menu");
         }
         private static void FoodQuiz()
