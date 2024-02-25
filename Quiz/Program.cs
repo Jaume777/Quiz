@@ -247,7 +247,7 @@
         {
             int answer;
 
-            Console.WriteLine("Question 1 - What is the name of the gallaxy we live in? \n 1 - Black Eye \n 2 - Cigar \n 3 - Milky Way \n 4 - Andromeda");
+            Console.WriteLine("Question 1 - What is the name of the galaxy we live in? \n 1 - Black Eye \n 2 - Cigar \n 3 - Milky Way \n 4 - Andromeda");
             answer = Convert.ToInt32(Console.ReadLine());
 
             if (answer == 3)
@@ -278,7 +278,7 @@
 
             Console.Clear();
 
-            Console.WriteLine("Question 3 - Which one is closest to he sun? \n 1 - Mercury \n 2 - Mars \n 3 - Pluto \n 4 - Earth");
+            Console.WriteLine("Question 3 - Which one is closest to the sun? \n 1 - Mercury \n 2 - Mars \n 3 - Pluto \n 4 - Earth");
             answer = Convert.ToInt32(Console.ReadLine());
             if (answer == 1)
             {
