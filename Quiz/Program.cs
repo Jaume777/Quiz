@@ -339,10 +339,10 @@
         //End of Miquel's Code
         private static void EntertainmentQuiz()
         {
-            try
+            try //I use exception handling to prevent the program from crashing if the user enters incorrect data
             {
-                int anwser;
-                int count = 0;
+                int anwser; //I use this variable to determine whether the answer is correct or not
+                int count = 0; //I use a variable to count how many correct answers the user has made
 
                 Console.Clear();
                 Console.WriteLine("First question:");
@@ -355,9 +355,10 @@
                 anwser = Convert.ToInt32(Console.ReadLine());
 
                 if(anwser == 1) Console.WriteLine("The answer is not correct!!!");
-                else if (anwser == 2)
+                else if (anwser == 2) 
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
@@ -374,7 +375,8 @@
 
                 if (anwser == 1)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
@@ -395,7 +397,8 @@
                 else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
                 else if (anwser == 4)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
 
@@ -412,7 +415,8 @@
                 else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
                 else if (anwser == 3) 
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 4) Console.WriteLine("The answer is not correct!!!");
@@ -431,7 +435,8 @@
                 else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
                 else if (anwser == 4)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
 
@@ -449,10 +454,10 @@
         }
         private static void SportsQuiz()
         {
-            try
+            try //I use exception handling to prevent the program from crashing if the user enters incorrect data
             {
-                int answer;
-                int count = 0;
+                int answer; //I use this variable to determine whether the answer is correct or not
+                int count = 0; //I use a variable to count how many correct answers the user has made
 
                 Console.Clear();
                 Console.WriteLine("First question:");
@@ -466,7 +471,8 @@
 
                 if (answer == 1)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
@@ -484,7 +490,8 @@
 
                 if (answer == 1)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
@@ -502,7 +509,8 @@
 
                 if (answer == 1)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
@@ -522,7 +530,8 @@
                 else if (answer == 2) Console.WriteLine("The answer is not correct!!!");
                 else if (answer == 3)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (answer == 4) Console.WriteLine("The answer is not correct!!!");
@@ -541,7 +550,8 @@
                 else if (answer == 3) Console.WriteLine("The answer is not correct!!!");
                 else if (answer == 4)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
 
@@ -559,10 +569,10 @@
         }
         private static void ITQuiz()
         {
-            try
+            try //I use exception handling to prevent the program from crashing if the user enters incorrect data
             {
-                int anwser;
-                int count = 0;
+                int anwser; //I use this variable to determine whether the answer is correct or not
+                int count = 0; //I use a variable to count how many correct answers the user has made
 
                 Console.Clear();
                 Console.WriteLine("First question:");
@@ -576,7 +586,8 @@
 
                 if (anwser == 1)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
@@ -594,7 +605,8 @@
 
                 if (anwser == 1)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
@@ -613,7 +625,8 @@
                 if (anwser == 1) Console.WriteLine("The answer is not correct!!!");
                 else if (anwser == 2) 
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
@@ -631,7 +644,8 @@
                 if (anwser == 1) Console.WriteLine("The answer is not correct!!!");
                 else if (anwser == 2)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 3) Console.WriteLine("The answer is not correct!!!");
@@ -648,7 +662,8 @@
 
                 if (anwser == 1)
                 {
-                    Console.WriteLine("The answer is correct!!!");
+                    Console.WriteLine("The answer is correct!!!"); //If the answer is this, the following message will be displayed,
+                                                                   //and the counter for correct answers will increment by 1
                     count++;
                 }
                 else if (anwser == 2) Console.WriteLine("The answer is not correct!!!");
