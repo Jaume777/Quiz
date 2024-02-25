@@ -4,8 +4,6 @@
     {
         static void Main(string[] args)
         {
-            // Here we create the menu to show the different topics to choose.
-            // And we also declare all the possible options.
             ConsoleKeyInfo tecla;
             do
             {
@@ -61,8 +59,6 @@
                 }
             } while (tecla.Key != ConsoleKey.D0 && tecla.Key != ConsoleKey.NumPad0);
         }
-
-        // This function is called at the begining to actually show all the topics.
         public static void ShowOptions()
         {
             Console.Clear();
